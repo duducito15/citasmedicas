@@ -95,7 +95,7 @@
       </div>
     </div>
     <!-- Page content -->
-@yield('content')
+    @yield('content')
     <!-- Footer -->
     <footer class="py-5">
       <div class="container">
