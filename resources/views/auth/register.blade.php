@@ -1,5 +1,8 @@
 @extends('layouts.form')
 
+@section('title','Registrate en nuestra App')
+    
+
 @section('content')
     <div class="container mt--8 pb-5">
         <!-- Table -->
@@ -9,9 +12,19 @@
 
                     <div class="card-body px-lg-5 py-lg-5">
 
-                        <div class="text-center text-muted mb-4">
-                            <small>Ingrese sus datos</small>
-                        </div>
+                        @if ($errors->any())
+                            <div class="text-center text-muted mb-2">
+                                <h4>Se encontro el siguiente error</h4>
+                            </div>
+                            <div class="alert alert-danger mb-4" role="alert">
+                                {{ $errors->first() }}
+                            </div>
+                        @else
+                            <div class="text-center text-muted mb-4">
+                                <small>Ingrese tus datos</small>
+                            </div>
+                        @endif
+                       
                         <form role="form" method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="form-group">
