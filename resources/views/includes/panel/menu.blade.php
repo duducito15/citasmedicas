@@ -1,3 +1,4 @@
+<h6 class="navbar-heading text-muted">Gestión</h6>
 <ul class="navbar-nav">
     <li class="nav-item  active ">
         <a class="nav-link  active " href="./index.html">
@@ -22,8 +23,7 @@
     
     <li class="nav-item">
         <a class="nav-link" href="{{ route('logout') }}"
-            onclick="event.preventDefault(); document.getElementById('formLogout').submit();"
-        >
+            onclick="event.preventDefault(); document.getElementById('formLogout').submit();">
             <i class="fas fa-sign-in-alt text-danger"></i> Cerrar sesión
         </a>
         <form action="{{ route('logout') }}" method="POST" style="display: none " id="formLogout">
