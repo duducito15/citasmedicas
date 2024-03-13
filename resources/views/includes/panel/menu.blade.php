@@ -1,34 +1,25 @@
 <ul class="navbar-nav">
     <li class="nav-item  active ">
         <a class="nav-link  active " href="./index.html">
-            <i class="ni ni-tv-2 text-primary"></i> Dashboard
+            <i class="ni ni-tv-2 text-danger"></i> Dashboard
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link " href="./examples/icons.html">
-            <i class="ni ni-planet text-blue"></i> Icons
+        <a class="nav-link " href="#">
+            <i class="ni ni-briefcase-24 text-blue"></i> Especialidades
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link " href="./examples/maps.html">
-            <i class="ni ni-pin-3 text-orange"></i> Maps
+        <a class="nav-link " href="#">
+            <i class="fas fa-stethoscope text-info"></i> Medicos
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link " href="./examples/profile.html">
-            <i class="ni ni-single-02 text-yellow"></i> User profile
+        <a class="nav-link " href="#">
+            <i class="fas fa-bed text-warning"></i> Pacientes
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link " href="./examples/tables.html">
-            <i class="ni ni-bullet-list-67 text-red"></i> Tables
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="./examples/login.html">
-            <i class="ni ni-key-25 text-info"></i> Login
-        </a>
-    </li>
+    
     <li class="nav-item">
         <a class="nav-link" href="{{ route('logout') }}"
             onclick="event.preventDefault(); document.getElementById('formLogout').submit();"
@@ -43,29 +34,19 @@
 <!-- Divider -->
 <hr class="my-3">
 <!-- Heading -->
-<h6 class="navbar-heading text-muted">Documentation</h6>
+<h6 class="navbar-heading text-muted">Reportes</h6>
 <!-- Navigation -->
 <ul class="navbar-nav mb-md-3">
     <li class="nav-item">
-        <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html">
-            <i class="ni ni-spaceship"></i> Getting started
+        <a class="nav-link" href="#">
+            <i class="ni ni-books text-default"></i> Citas
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html">
-            <i class="ni ni-palette"></i> Foundation
+        <a class="nav-link" href="#">
+            <i class="ni ni-chart-bar-32 text-warning"></i> Desempeño medico
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html">
-            <i class="ni ni-ui-04"></i> Components
-        </a>
-    </li>
+    
 </ul>
-<ul class="navbar-nav">
-    <li class="nav-item active active-pro">
-        <a class="nav-link" href="./examples/upgrade.html">
-            <i class="ni ni-send text-dark"></i> Upgrade to PRO
-        </a>
-    </li>
-</ul>
+
