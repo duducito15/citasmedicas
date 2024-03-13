@@ -2,17 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,3 +9,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Rutas para especilidades
+Route::get('/especialidades', [App\Http\Controllers\SpecialtyController::class, 'index']);//Listado de especialdiades
+Route::get('/especialidades/create', [App\Http\Controllers\SpecialtyController::class, 'create']);//Crear especialdiades
+Route::get('/especialidades/{speciality}/edit', [App\Http\Controllers\SpecialtyController::class, 'edit']);//Editar especialdiades
+Route::post('/especialidades', [App\Http\Controllers\SpecialtyController::class, 'sendData']);//enviar especialdiades
