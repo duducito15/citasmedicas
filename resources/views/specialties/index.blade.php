@@ -8,7 +8,7 @@
                     <h3 class="mb-0">Especialidades</h3>
                 </div>
                 <div class="col text-right">
-                    <a href="{{url('especialidades/create')}}" class="btn btn-sm btn-primary">Nueva especialidad</a>
+                    <a href="{{ url('especialidades/create') }}" class="btn btn-sm btn-primary">Nueva especialidad</a>
                 </div>
             </div>
         </div>
@@ -20,24 +20,23 @@
                         <th scope="col">Nombre</th>
                         <th scope="col">Descripción</th>
                         <th scope="col">Opciones</th>
-                       
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">
-                            /argon/
-                        </th>
-                        <td>
-                            4,569
-                        </td>
-                        <td>
-                            <a href="" class="btn btn-sm btn-primary">Editar</a>
-                            <a href="" class="btn btn-sm btn-danger">Eliminar</a>
-                        </td>
-                        
-                    </tr>
-                    
+                    @foreach ($specialties as $especialidad)
+                        <tr>
+                            <th scope="row">
+                                {{ $especialidad->name }}
+                            </th>
+                            <td>
+                                {{ $especialidad->description }}
+                            </td>
+                            <td>
+                                <a href="" class="btn btn-sm btn-primary">Editar</a>
+                                <a href="" class="btn btn-sm btn-danger">Eliminar</a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
