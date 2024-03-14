@@ -8,7 +8,7 @@
                     <h3 class="mb-0">Especialidades</h3>
                 </div>
                 <div class="col text-right">
-                    <a href="#!" class="btn btn-sm btn-primary">Nueva especialidad</a>
+                    <a href="{{url('especialidades/create')}}" class="btn btn-sm btn-primary">Nueva especialidad</a>
                 </div>
             </div>
         </div>

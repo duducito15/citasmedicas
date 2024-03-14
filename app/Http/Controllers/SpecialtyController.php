@@ -9,7 +9,11 @@ class SpecialtyController extends Controller
     public function __construct() {
         $this->middleware('auth');
     }
-    function index() {
+    public function index() {
         return view('specialties.index');
     }
+    public function create() {
+        return view('specialties.create');
+    }
+
 }
