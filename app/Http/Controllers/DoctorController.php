@@ -101,7 +101,7 @@ class DoctorController extends Controller
             'phone.required' => 'El número de teléfono es obligatorio',
         ];
         $this->validate($request, $rules, $messages);
-        $user = User::doctors()->findOrFail($id);
+        $user = User::Doctors()->findOrFail($id);
 
         $data = $request->only('name','email','cedula','address','phone');
         $password = $request->input('password');
@@ -120,7 +120,7 @@ class DoctorController extends Controller
     
     public function destroy($id)
     {
-        $user = User::doctors()->findOrFail($id);
+        $user = User::Doctors()->findOrFail($id);
         $doctorName = $user->name;
         $user->delete();
 
