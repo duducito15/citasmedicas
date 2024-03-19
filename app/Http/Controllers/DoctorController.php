@@ -29,7 +29,7 @@ class DoctorController extends Controller
         $rules = [
             'name' => 'required|min:3',
             'email' => 'required|email',
-            'cedula' => 'required|digits:10',
+            'cedula' => 'required|digits:8',
             'address' => 'nullable|min:6',
             'phone' => 'required',
         ];
@@ -52,7 +52,7 @@ class DoctorController extends Controller
                 'password' => bcrypt($request->input('password'))
             ]
         );
-        $user->specialties()->attach($request->input('specialties'));
+        //$user->specialties()->attach($request->input('specialties'));
 
         $notification = 'El médico se ha registrado correctamente.';
         return redirect('/medicos')->with(compact('notification'));
