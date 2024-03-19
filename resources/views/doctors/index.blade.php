@@ -9,7 +9,7 @@
                 </div>
                 <div class="col text-right">
                     <a href="{{ url('medicos/create') }}" class="btn btn-sm btn-primary">Nuevo medico</a>
-                </div>
+                </div> 
             </div>
         </div>
         <div class="card-body">
